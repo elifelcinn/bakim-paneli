@@ -2,7 +2,7 @@
 
 Fabrikadaki makinelerin sensör ölçümlerini kaydeden ve her ölçüm için arıza riskini anında hesaplayan bir web uygulaması. Software Persona & TNC Group Yapay Zeka Mesleki Gelişim Programı (31. dönem), Web Geliştirme; Yapay Zeka modülü projesidir.
 
-**Canlı link:** CANLI_LINK_BURAYA
+**Canlı link:** https://bakim-panelinetlifyapp.netlify.app
 
 ![Ekran görüntüsü](ekran-goruntusu.png)
 
