@@ -1,0 +1,21 @@
+:root {
+  --koyu: #1e2a33;
+  --zemin: #f4f2ec;
+  --kart: #ffffff;
+  --cizgi: #e2dfd6;
+  --soluk: #5b6670;
+  --mavi: #2f6e95;
+  --kirmizi: #b8323f;
+  --kirmizi-zemin: #fbebeb;
+  --turuncu: #b15a12;
+  --turuncu-zemin: #fdf0e1;
+  --yesil: #2e7a4f;
+  --yesil-zemin: #e5f4e9;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--koyu);
+  background: var(--zemin);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+h1, h2, h3, p { margin: 0; }
+button, input, select { font: inherit; }

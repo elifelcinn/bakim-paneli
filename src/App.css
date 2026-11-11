@@ -1,0 +1,67 @@
+.sayfa { max-width: 1180px; margin: 0 auto; padding: 32px 20px 48px; }
+.ust { background: var(--koyu); color: var(--zemin); border-radius: 16px; padding: 32px; }
+.ust-etiket { color: #e8913a; font-weight: 600; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; }
+.ust h1 { font-size: 32px; margin: 6px 0 8px; }
+.ust-aciklama { color: #c9cfd4; max-width: 640px; line-height: 1.5; }
+
+.ozet { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 20px 0; }
+.kart { background: var(--kart); border: 1px solid var(--cizgi); border-radius: 12px; padding: 16px 20px; display: flex; flex-direction: column; gap: 4px; color: var(--soluk); }
+.kart .sayi { font-size: 30px; font-weight: 700; color: var(--koyu); }
+.kart.yuksek .sayi { color: var(--kirmizi); }
+.kart.uyari .sayi { color: var(--turuncu); }
+.kart.normal .sayi { color: var(--yesil); }
+
+.izgara { display: grid; grid-template-columns: 360px 1fr; gap: 20px; align-items: start; }
+.panel { background: var(--kart); border: 1px solid var(--cizgi); border-radius: 16px; padding: 24px; }
+.panel h2 { font-size: 20px; margin-bottom: 16px; }
+form.panel { display: flex; flex-direction: column; gap: 12px; position: sticky; top: 16px; }
+label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: var(--soluk); }
+input, select { border: 1px solid var(--cizgi); border-radius: 8px; padding: 9px 10px; color: var(--koyu); background: #fff; width: 100%; }
+input:focus, select:focus { outline: 2px solid var(--mavi); outline-offset: 1px; }
+.ikili { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.onizleme { border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; font-size: 14px; }
+.onizleme.normal { background: var(--yesil-zemin); color: var(--yesil); }
+.onizleme.uyari { background: var(--turuncu-zemin); color: var(--turuncu); }
+.onizleme.yuksek { background: var(--kirmizi-zemin); color: var(--kirmizi); }
+.hata { color: var(--kirmizi); font-size: 14px; }
+
+button { cursor: pointer; border-radius: 8px; border: 1px solid var(--cizgi); background: #fff; padding: 8px 14px; color: var(--koyu); }
+button.birincil { background: var(--mavi); border-color: var(--mavi); color: #fff; font-weight: 600; padding: 11px; }
+button.birincil:hover { background: #255a7a; }
+button.ikincil:hover { background: var(--zemin); }
+button.tehlike { color: var(--kirmizi); }
+
+.liste-ust { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.liste-ust h2 { margin: 0; }
+.filtreler { display: flex; gap: 6px; flex-wrap: wrap; }
+.filtreler button { font-size: 14px; padding: 6px 12px; }
+.filtreler button.secili { background: var(--koyu); color: #fff; border-color: var(--koyu); }
+
+.kayitlar { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.kayit { border: 1px solid var(--cizgi); border-left: 5px solid var(--yesil); border-radius: 12px; padding: 14px 16px; }
+.kayit.uyari { border-left-color: #e8913a; }
+.kayit.yuksek { border-left-color: var(--kirmizi); }
+.kayit-ust { display: flex; justify-content: space-between; gap: 12px; }
+.kayit h3 { font-size: 17px; }
+.kayit h3 small { font-weight: 400; color: var(--soluk); font-size: 13px; margin-left: 6px; }
+.olcum { color: var(--soluk); font-size: 14px; margin-top: 4px; }
+.sag { display: flex; align-items: flex-start; gap: 8px; }
+.rozet { font-size: 13px; font-weight: 600; border-radius: 999px; padding: 4px 10px; white-space: nowrap; }
+.rozet.normal { background: var(--yesil-zemin); color: var(--yesil); }
+.rozet.uyari { background: var(--turuncu-zemin); color: var(--turuncu); }
+.rozet.yuksek { background: var(--kirmizi-zemin); color: var(--kirmizi); }
+.sil { font-size: 13px; padding: 4px 10px; color: var(--soluk); }
+.nedenler { margin: 10px 0 0; padding-left: 18px; font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
+.neden-risk { color: var(--kirmizi); }
+.neden-uyari { color: var(--turuncu); }
+.tarih { font-size: 12px; color: #8a949c; margin-top: 8px; }
+.bos { color: var(--soluk); text-align: center; padding: 32px 8px; display: flex; flex-direction: column; gap: 14px; align-items: center; }
+.alt-butonlar { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; }
+.alt { color: var(--soluk); font-size: 13px; text-align: center; margin-top: 28px; line-height: 1.5; }
+
+@media (max-width: 860px) {
+  .izgara { grid-template-columns: 1fr; }
+  form.panel { position: static; }
+  .ozet { grid-template-columns: repeat(2, 1fr); }
+}
